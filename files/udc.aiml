@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>I'm not sure what you meant. Try re-wording that.</template>
+  </category>
+  
+  <category>
+      <pattern>HELLO</pattern>
+      <template>
+          Hi! My name is career bot.<br/>
+          I am designed to help computer science students pick a career path.<br/>
+          Would you like some assitance?
+      </template>
+  </category>
+  
+  <category>
+      <pattern>HI</pattern>
+      <template><srai>HELLO</srai></template>
+  </category>
+  
+  <category>
+      <pattern>YES</pattern>
+      <that>WOULD YOU LIKE SOME ASSITANCE</that>
+      <template>
+          OK! Here are 5 top career paths to consider:<br/>
+          1. Software Developer<br/>
+          2. Data Scientist<br/>
+          3. Systems Analyst<br/>
+          4. Cybersecurity Analyst<br/>
+          5. Database Administrator<br/><br/>
+          I'm going to ask a few questions and then pick one for you to read 
+          up on. Ready?          
+      </template>
+  </category>
+  
+  <category>
+      <pattern>YEAH</pattern>
+      <template><srai>YES</srai></template>
+  </category>
+  
+  <category>
+      <pattern>OK</pattern>
+      <template><srai>YES</srai></template>
+  </category>
+  
+  <category>
+      <pattern>YES</pattern>
+      <that>READY</that>
+      <template>
+          First question. Pick your favorite element of computer science:<br/>
+          1. Programming<br/>
+          2. Analysis<br/>
+          3. Database design<br/>
+          4. Security
+      </template>
+  </category>
+  
+  <category>
+      <pattern>1</pattern>
+      <that>SECURITY</that>
+      <template>
+          Software Developers spend the most time programming. 
+          You should look more into that path by searching "software development" 
+          on Coursera. What do you think?
+      </template>
+  </category>
+  
+  <category>
+      <pattern>PROGRAMMING</pattern>
+      <template><srai>1</srai></template>
+  </category>
+  
+  <category>
+      <pattern>2</pattern>
+      <that>SECURITY</that>
+      <template>
+          Ah, I enjoy analysis as well! What kind of analysis interests you:<br/>
+          1. Big data and statistics<br/>
+          2. Computer system design
+      </template>
+  </category>
+  
+  <category>
+      <pattern>1</pattern>
+      <that>COMPUTER SYSTEM DESIGN</that>
+      <template>
+          Perhaps Data Scientist is a role that will mesh well with your interests. 
+          I recommend trying out the IBM Data Science course on Coursera. 
+          What do you think?
+      </template>
+  </category>
+  
+  <category>
+      <pattern>2</pattern>
+      <that>COMPUTER SYSTEM DESIGN</that>
+      <template>
+          Systems Analyst might make a great match for you! 
+      <link>
+          <text>Check out this 
+          video </text>
+          <url>https://youtu.be/-1TTo_GardI?si=jqALX31542ZRQc2Q</url>
+      </link>
+       I found that gives an overview of the job. What do you think?
+      </template>
+  </category>
+  
+  <category>
+      <pattern>* DESIGN</pattern>
+      <template><srai>2</srai></template>
+  </category>
+  
+  <category>
+      <pattern>3</pattern>
+      <that>SECURITY</that>
+      <template>
+          Database Administrator is certainly a role worth considering for you! 
+          Try searching "Database Administrator" on Coursera to get you started. 
+          What do you think?
+      </template>
+  </category>
+  
+  <category>
+      <pattern>DATABASE</pattern>
+      <template><srai>3</srai></template>
+  </category>
+  
+  <category>
+      <pattern>4</pattern>
+      <template>
+          Cybersecurity Analyst is a high demand field that may interest you! 
+          There is plenty of content to get you started on udemy.com!<br/>
+          What do you think?
+      </template>
+  </category>
+  
+  <category>
+      <pattern>SECURITY</pattern>
+      <template><srai>4</srai></template>
+  </category>
+  
+  <category>
+      <pattern>*</pattern>
+      <that>WHAT DO YOU THINK</that>
+      <template>
+          If you stay persistent you will surely find your way to the right role 
+          for you. Would you like to explore other roles?
+      </template>
+  </category>
+  
+  <category>
+      <pattern>YES</pattern>
+      <that>WOULD YOU LIKE TO EXPLORE OTHER ROLES</that>
+      <template><srai>HELLO</srai></template>
+  </category>
+  
+  <category>
+      <pattern>NO</pattern>
+      <that>WOULD YOU LIKE TO EXPLORE OTHER ROLES</that>
+      <template>OK! Good luck with your career!</template>
+  </category>
+  
+  
+</aiml>
